@@ -1,0 +1,24 @@
+cd ~/Downloads
+ls mongo*
+tar xzf mongodb-osx-x86_64-3.4.7.tar
+sudo mkdir -p /usr/local/mongodb
+sudo mv mongodb-osx-x86_64-3.4.7 /usr/local/mongodb
+
+sudo mkdir -p /data/db
+sudo chown jrhubbard /data/db
+
+cd ~
+touch .bash_profile
+vim .bash_profile
+
+i
+export MONGO_PATH=/usr/local/mongodb/mongodb-osx-x86_64-3.4.7
+export PATH=$PATH:$MONGO_PATH/bin
+ps1="\w $ "
+ZZ
+
+source .bash_profile
+
+mongo -version
+
+mongod

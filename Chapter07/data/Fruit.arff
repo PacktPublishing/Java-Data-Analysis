@@ -1,0 +1,23 @@
+@RELATION Fruit
+@ATTRIBUTE Name String
+@ATTRIBUTE Size {SMALL,MEDIUM,LARGE}
+@ATTRIBUTE Color {RED,YELLOW,BROWN,ORANGE,GREEN}
+@ATTRIBUTE Surface {SMOOTH,ROUGH,FUZZY}
+@ATTRIBUTE Sweet {F,T}
+@DATA
+apple       MEDIUM  RED     SMOOTH   T
+apricot     MEDIUM  YELLOW  FUZZY    T
+banana      MEDIUM  YELLOW  SMOOTH   T
+cherry      SMALL   RED     SMOOTH   T
+coconut     LARGE   BROWN   FUZZY    T
+cranberry   SMALL   RED     SMOOTH   F
+fig         SMALL   BROWN   ROUGH    T
+grapefruit  LARGE   YELLOW  ROUGH    F
+kumquat     SMALL   ORANGE  SMOOTH   F
+lemon       MEDIUM  YELLOW  ROUGH    F
+orange      MEDIUM  ORANGE  ROUGH    T
+peach       MEDIUM  ORANGE  FUZZY    T
+pear        MEDIUM  YELLOW  SMOOTH   T
+pineapple   LARGE   BROWN   ROUGH    T
+pumpkin     LARGE   ORANGE  SMOOTH   F
+strawberry  SMALL   RED     ROUGH    T

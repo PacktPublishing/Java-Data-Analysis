@@ -1,0 +1,13 @@
+db.createCollection("relatives")
+show collections
+db.relatives.insert({'fname':'Jack','relation':'grandson'})
+db.relatives.insert([
+    {'fname':'Henry','relation':'grandson'},
+    {'fname':'Sara','relation':'daughter'}
+])
+db.relatives.find()
+
+db.friends.find({$and:[{'sex':'M'},{'dob':{$gt:'1985-01-01'}}]}).pretty()
+
+db.friends.update({'fname':'Tom'},{$set:{'phone':'123-456-7890'}})
+db.friends.find().pretty()

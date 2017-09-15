@@ -1,0 +1,19 @@
+mongo
+
+show dbs
+use friends
+
+tom = {fname:"Tom", lname:"Jones", dob:"1983-07-25", sex:"M"}
+tom
+db.friends.insert(tom);
+
+ann = {fname:"Ann", lname:"Smith", dob:"1986-04-19", sex:"F"}
+jim = {fname:"Jim", lname:"Chang", dob:"1986-04-19", sex:"M"}
+db.friends.insert(ann);
+db.friends.insert(jim);
+show dbs
+
+db.friends.find()
+
+oid = ObjectId("59b6b601f631b9abe9ca0e60")
+oid.getTimestamp()

@@ -1,0 +1,30 @@
+mongo
+
+use library
+db.createCollection('authors')
+db.createCollection('publishers')
+db.createCollection('books')
+
+db.authors.insert({'_id':'AhoAV','lname':'Aho','fname':'Alfred V.','yob':1941})
+db.authors.insert({'_id':'HopcroftJE','lname':'Hopcroft','fname':'John E.','yob':1939})
+db.authors.insert({'_id':'WirthN','lname':'Wirth','fname':'Niklaus','yob':1934})
+db.authors.insert({'_id':'LeisersonCE','lname':'Leiserson','fname':'Charles E.','yob':1953})
+db.authors.insert({'_id':'RivestRL','lname':'Rivest','fname':'Ronald L.','yob':1947})
+db.authors.insert({'_id':'SteinCL','lname':'Stein','fname':'Clifford S.','yob':1965})
+db.authors.find().sort({'_id':1})
+
+db.publishers.insert({'_id':'PACKT','name':'Packt Publishers Limited','city':'Birmingham','country':'UK'})
+db.publishers.insert({'_id':'A-W','name':'Addison-Wesley Longman, Inc.','city':'Reding, MA','country':'US'})
+db.publishers.insert({'_id':'MIT','name':'The MIT Press','city':'Cambridge, MA','country':'US'})
+db.publishers.insert({'_id':'PH','name':'Prentice Hall, Inc.','city':'Upper Saddle River, NJ','country':'US'})
+
+
+db.publishers.find().sort({'_id':1})
+
+
+db.books.insert({'_id':'9781491901632','title':'Hadoop: The Definitive Guide','author':'WhiteT','publisher':'OREILLY','year':2015})
+
+db.books.insert({'_id':'9781449344689','title':'MongoDB: The Definitive Guide','author':'ChodorowK','publisher':'OREILLY','year':2013})
+
+db.books.insert({'_id':'0201000237','title':'Algorithms and Data Structures','author':['AhoAV','HopcroftJE','UllmanJD'],'publisher':'A-W','year':1982})
+db.books.find().pretty()
