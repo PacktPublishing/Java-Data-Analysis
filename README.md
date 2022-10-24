@@ -28,3 +28,7 @@ This book is focused on an understanding of the fundamental principles and algor
 
 * [Java: Data Science Made Easy](https://www.packtpub.com/big-data-and-business-intelligence/java-data-science-made-easy?utm_source=github&utm_medium=repository&utm_campaign=9781788475655)
 
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781787285651">https://packt.link/free-ebook/9781787285651 </a> </p>
